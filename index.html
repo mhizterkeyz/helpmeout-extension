@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpMeOut</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="display-column gap" style="--gap: 32px">
+        <div>
+          <div class="display-column gap" style="--gap: 16px">
+            <div>
+              <div
+                class="display-row justify-content-space-between align-items-center"
+              >
+                <div>
+                  <img
+                    class="logo"
+                    src="./images/logo.svg"
+                    alt="HelpMeOut Logo"
+                  />
+                </div>
+
+                <div>
+                  <div
+                    class="display-row align-items-center gap"
+                    style="--gap: 12px"
+                  >
+                    <button class="icon-button">
+                      <span class="material-icons">settings</span>
+                    </button>
+
+                    <button class="icon-button close">
+                      <span class="material-icons">close</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p style="max-width: 255px; letter-spacing: 0.2px">
+                This extension helps you record and share help videos with ease.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="display-column gap" style="--gap: 24px">
+            <div>
+              <div
+                class="display-row justify-content-center gap align-items-center"
+                style="--gap: 30px"
+              >
+                <div>
+                  <button class="screen-button">
+                    <div
+                      class="display-column align-items-center gap"
+                      style="--gap: 8px"
+                    >
+                      <div>
+                        <span class="material-icons">desktop_mac</span>
+                      </div>
+
+                      <div>
+                        <span>Full Screen</span>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+
+                <div>
+                  <button class="screen-button selected">
+                    <div
+                      class="display-column align-items-center gap"
+                      style="--gap: 8px"
+                    >
+                      <div>
+                        <span class="material-icons">tab</span>
+                      </div>
+
+                      <div>
+                        <span>Current Tab</span>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="display-row justify-content-space-between align-items-center recording-option"
+              >
+                <div>
+                  <div
+                    class="display-row align-items-center gap"
+                    style="--gap: 8px"
+                  >
+                    <span class="material-icons">videocam</span>
+
+                    <span>Camera</span>
+                  </div>
+                </div>
+
+                <div class="switch">
+                  <input type="checkbox" id="this-switch" checked />
+                  <label for="this-switch"> </label>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="display-row justify-content-space-between align-items-center recording-option"
+              >
+                <div>
+                  <div
+                    class="display-row align-items-center gap"
+                    style="--gap: 8px"
+                  >
+                    <span class="material-icons">mic_none</span>
+
+                    <span>Audio</span>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="switch">
+                    <input type="checkbox" id="second-switch" />
+                    <label for="second-switch"> </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <button class="button"><span>Start Recording</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

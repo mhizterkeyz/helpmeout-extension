@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Work+Sans:wght@500&display=swap");
+
+.hmo-root * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+.hmo-root {
+  position: relative;
+}
+
+.hmo-root video {
+  width: 100%;
+  height: 100%;
+}
+
+.hmo-controls {
+  position: fixed;
+  left: 40px;
+  bottom: 20px;
+  z-index: 999;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  color: #ffffff;
+}
+
+.hmo-video {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+.hmo-floating-controls {
+  width: 567px;
+  border-radius: 200px;
+  padding: 8px;
+  background: #6262622b;
+}
+
+.hmo-floating-controls > div {
+  background: #141414;
+  border-radius: 200px;
+  padding: 12px 40px 12px 16px;
+}
+
+.hmo-timer {
+  width: 153px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: "Inter", sans-serif;
+}
+
+.hmo-live {
+  width: 20px;
+  height: 20px;
+  background: #c0040430;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hmo-live > span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #c00404;
+  border-radius: 50%;
+}

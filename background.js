@@ -5,9 +5,15 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         target: { tabId },
         files: ["./content.js"],
       })
-      .then(() => {
-        console.log("scripts injected");
+      .catch((error) =>
+        console.log("error injecting HelpMeOut scripts", error)
+      );
+
+    chrome.scripting
+      .insertCSS({
+        target: { tabId },
+        files: ["./controls.css"],
       })
-      .catch((error) => console.log("error injecting scripts", error));
+      .catch((error) => console.log("error injecting HelpMeOut CSS", error));
   }
 });

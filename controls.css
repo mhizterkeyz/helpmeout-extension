@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Work+Sans:wght@500&display=swap");
 
 .hmo-root * {
@@ -10,6 +9,7 @@
 
 .hmo-root {
   position: relative;
+  display: none;
 }
 
 .hmo-root video {
@@ -33,7 +33,8 @@
   width: 160px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #f2f2f2;
+  background-color: #6262622b;
+  display: none;
 }
 
 .hmo-floating-controls {
@@ -75,4 +76,45 @@
   height: 10px;
   background: #c00404;
   border-radius: 50%;
+}
+
+.hmo-divider {
+  height: 48px;
+  border-left: 1px solid #e8e8e8;
+}
+
+.hmo-root button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.hmo-root button .material-icons {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.hmo-root button.trash .material-icons {
+  background: #4b4b4b;
+  color: #bebebe;
+}
+
+.hmo-buttons {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
 }
